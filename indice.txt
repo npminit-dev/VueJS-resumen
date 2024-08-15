@@ -1,0 +1,44 @@
+
+main.js: inicializacion y montaje de una aplicacion de vuejs, uso de librerias e instancias de aplicaciones multiples.
+App.vue: aqui se renderizaran los componentes de cada una de las partes de la documentacion:
+
+Los capitulos se encuentran en la carpeta src/components
+
+Capitulo 1: conceptos basicos (carpeta essentials):
+
+  1_TemplateSyntax: SFC, Composition API, interpolacion de texto, 
+  directivas v-html, v-bind (shorthands y booleans), binds multiples, expresiones, directivas, modificadores.
+
+  2_ReactivityFundamentals: ref, shallowRef, reactive (proxies), shallowReactive, actualizaciones profundas, 
+  reglas de unwrapping automatico de refs y proxies, nextTick
+
+  3_ComputedProperties: valores computados con posibilidad de modificacion
+
+  4_ClassAndStyleBinding: binding de clases y estilos mediante arreglos y objetos, binding condicional, prefixes.
+
+  5_ConditionalRender: v-if, v-else-if, v-else, v-show
+
+  6_ListRender: v-for sobre arrays y sobre objetos, interaccion con v-if, renderizado de listas componentes.
+
+  7_EventHandlers: manejadores de eventos, modificadores, shorthands
+
+  8_FormBindings: binding 'estandar', directiva v-model, casos de uso con inputs/checkboxs/textareas/selects, renderizado dinamico, 
+  'value' dinamico, modificadores de v-model, binding de valores 'no string', true-value/false-value.
+
+  9_LifeCycleHooks: onBeforeMount, onBeforeUpdate, onErrorCaptured, onMounted, onRenderTracked, onRenderTriggered, 
+  onUpdated, onActivated, onDeactivated, onServerPrefetch
+
+  10_Watchers: watcher, watcherEffect, funcionamiento con distintas dependencias, propiedades 'inmediate' y 'flush', watchers asincronos.
+
+  11_TemplateRefs: referencias a nodos del DOM (bindeadas mediante string y mediante funciones), referencias a componentes.
+
+  12_ComponentEssentials: definicion y paso de props a componentes hijos, escucha de eventos emitidos por los hijos, 
+  componente <slot/>, renderizado dinamico de componentes, advertencias.
+
+
+Capitulo 2: componentes en profundidad (carpeta components_indepth):
+
+  1_Registration: registro local y global, ventajas y desventajas, uso de PascalCase y kebab-case
+
+  2_Props: Paso de distintos tipos de dato, distintas formas de pasar props, distintas formas de tipar las props.
+

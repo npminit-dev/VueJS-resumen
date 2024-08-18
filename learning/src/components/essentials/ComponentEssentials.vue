@@ -48,9 +48,9 @@
 
 <script setup>
 import { onErrorCaptured, onMounted, ref } from 'vue';
-import Album from '../test_component/Album.vue'
-import TabOne from '../test_component/TabOne.vue';
-import TabTwo from '../test_component/TabTwo.vue';
+import Album from '../test_components/Album.vue'
+import TabOne from '../test_components/TabOne.vue';
+import TabTwo from '../test_components/TabTwo.vue';
 
 const albums = ref([])
 const fontSize = ref(10)

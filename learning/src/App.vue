@@ -16,6 +16,10 @@ import TemplateRefs from './components/essentials/TemplateRefs.vue'
 import ComponentEssentials from './components/essentials/ComponentEssentials.vue'
 import Registration from './components/components_indepth/Registration.vue'
 import Props from './components/components_indepth/Props.vue'
+import Events from './components/components_indepth/Events.vue'
+import ComponentVModel from './components/components_indepth/ComponentVModel.vue'
+import FallThroughAttributes from './components/components_indepth/FallThroughAttributes.vue'
+import Slots from './components/components_indepth/Slots.vue'
 
 </script>
 
@@ -41,10 +45,15 @@ import Props from './components/components_indepth/Props.vue'
   <!-- Componentes en profundidad -->
 
   <!-- <Registration/> -->
-  <Props/>
+  <!-- <Props/> -->
+  <!-- <Events/> -->
+  <!-- <ComponentVModel/> -->
+  <!-- <FallThroughAttributes/> -->
+  <Slots/>
 
 
-  <RouterView />
+  <!-- ---------------------------------------------------------------- -->
+  <!-- <RouterView /> -->
 </template>
 
 

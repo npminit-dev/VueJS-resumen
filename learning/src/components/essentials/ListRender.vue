@@ -1,6 +1,6 @@
 <script setup>
 import { computed, ref } from 'vue';
-import Apartment from '../test_component/Apartment.vue';
+import Apartment from '../test_components/Apartment.vue';
 const array = ref([
   {
     name: 'jorge',

@@ -1,6 +1,8 @@
 
 <script setup>
-  defineProps({ /* podemos usar la sintaxis de objetos para definir las props, usamos el valor para definir los tipos */
+import { computed, onMounted, ref, watchEffect } from 'vue';
+
+  const props = defineProps({ /* podemos usar la sintaxis de objetos para definir las props, usamos el valor para definir los tipos */
     name: String,
     surname: String,
     age: Number,
@@ -9,6 +11,19 @@
   })
   /* Declaramos nombres de props largos usando camelCase porque esto evita tener que usar comillas cuando los usamos como claves de propiedad 
   y nos permite hacer referencia a ellos directamente en templates porque son identificadores válidos de JavaScript: */
+
+  /*  */
+  const specialities = ref(props.specialities.length)
+
+  const computedData = computed(() => [
+    props.isRegistered ? 'is already registered' : 'should register asap',
+    props.age > 18 ? 'is of legal age' : 'is a minor'
+  ])
+
+  onMounted(() => {
+    console.log(specialities.value)
+    console.log(computedData.value)
+  })
 
 </script>
 

@@ -4,8 +4,7 @@ en ciertos casos quizas necesitemos acceso directo a dichos nodos, podemos usar 
 
 <script setup>
 import { onUpdated, ref, watchEffect } from 'vue';
-import Apartment from '../test_component/Apartment.vue';
-const sense = ref('right');
+import Apartment from '../test_components/Apartment.vue';
 const rotateTargetRef = ref(null)
 const populateRefs = ref([])
 const optionRef1 = ref(null)

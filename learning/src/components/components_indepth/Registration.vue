@@ -23,7 +23,7 @@ Esto puede afectar la mantenibilidad a largo plazo de manera similar al uso de d
 Hace que la relación de dependencia sea más explícita y es más amigable con el 'tree shaking'. -->
 
 <script setup>
-  import Apartment from '../test_component/Apartment.vue'; // importacion local
+  import Apartment from '../test_components/Apartment.vue'; // importacion local
   /* para la Options API, debemos utilizar la propiedad components, que es un objeto donde la clave es el alias para el componente, 
   y el valor es el componente en si */
   /* notese que para componentes hijos hay que volver a importar el componente que se quiera usar, es decir, las importaciones no se heredan */

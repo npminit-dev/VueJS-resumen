@@ -12,7 +12,7 @@
 <script setup>
 
   import { ref } from 'vue'
-  const count = ref(0) // <- un ref es algo similar a un useState
+  const count = ref(0) // <- un ref es algo similar a un useState, un estado reactivo de Vue
   const contenteditable = true
   const disabled = true
   const attrs = {
@@ -31,7 +31,7 @@
 
 </script>
 
-<!-- template: la porcion de html devuelta por el componente, con los bindings a los estados del componentes definidos arriba, si los hubiese -->
+<!-- template: la porcion de html devuelta por el componente, con los enlaces a los estados del componentes definidos arriba, si los hubiese -->
 <template>
   <div id="counter_container">
     <h1>Counter</h1>
@@ -43,7 +43,7 @@
     <h2>square of counts: <span v-html="count**2"></span></h2>
     <!-- la directiva v-html es sensible a ataques XSS (asi como innerHTML), solo hay que usarlo en contenido confiable y nunca en inputs de usuario por ejemplo -->
 
-    <!-- los eventos se llaman con @, se incrementa mediante string -->
+    <!-- los eventos se llaman con @, la expresion que se ejecuta va entre comillas -->
     <button @click="count++">increment</button> 
 
     <br>

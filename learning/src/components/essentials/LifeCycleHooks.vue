@@ -6,7 +6,7 @@ En el camino, también ejecuta funciones llamadas 'hooks de ciclo de vida', brin
 <script setup>
 
 import { onBeforeMount, onBeforeUpdate, onErrorCaptured, onMounted, onRenderTracked, onRenderTriggered, onUpdated, ref } from 'vue';
-import UnMountTest from '../test_component/UnMountTest.vue';
+import UnMountTest from '../test_components/UnMountTest.vue';
 
 // onMounted(() => {
 //   console.log('componente montado por primera vez!')

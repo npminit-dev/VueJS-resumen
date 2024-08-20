@@ -1,6 +1,6 @@
 import './assets/main.css'
 
-import { createApp } from 'vue'
+import { createApp, defineAsyncComponent } from 'vue'
 import { createPinia } from 'pinia'
 import GlobalComponent from './components/test_components/GlobalComponent.vue'
 
@@ -14,10 +14,21 @@ app.use(createPinia()) // se hace uso las librerias requeridas para la app
 app.use(router)
 
 app.component('GlobalComponent', GlobalComponent) // registro de componentes globales (su nombre por el que vamos a llamarlo en la app, y el componente que se renderiza)
+app.component('LazyComponent3', defineAsyncComponent(() => import('./components/test_components/LazyComponent.vue'))) /* componente cargado de forma diferida */
 
 // app.config.errorHandler = (err) => { // se pueden registrar configuraciones globales para la app, como este error handler
 //   console.log('Error handled in app config (main.js): ' + err)
 // }
+
+app.provide('greetings', 'Hello! i`m main.js') // se proveen valores para ser accesibles a toda la aplicación mediante inject
+
+app.directive('submitBtn', { /* definicion de directivas globales (no require el prefijo 'v') */
+  mounted: (el) => {
+    if(el.tagName === 'BUTTON') {
+      el.type = 'submit'
+    }
+  }
+})
 
 app.mount('#app') // se monta la aplicacion en el nodo con el id #app, similar a como react lo hace con 'root'
 // app2.mount('#app2') // se monta otra instancia diferente de la misma app en otro nodo

@@ -2,7 +2,7 @@
 main.js: inicializacion y montaje de una aplicacion de vuejs, uso de librerias e instancias de aplicaciones multiples.
 App.vue: aqui se renderizaran los componentes de cada una de las partes de la documentacion:
 
-Los capitulos se encuentran en la carpeta src/components
+Los capitulos se encuentran en la carpeta src/components, los componentes auxiliares se encuentran en src/test_component
 
 Capitulo 1: conceptos basicos (carpeta essentials):
 
@@ -40,5 +40,34 @@ Capitulo 2: componentes en profundidad (carpeta components_indepth):
 
   1_Registration: registro local y global, ventajas y desventajas, uso de PascalCase y kebab-case
 
-  2_Props: Paso de distintos tipos de dato, distintas formas de pasar props, distintas formas de tipar las props.
+  2_Props: Paso de distintos tipos de dato, distintas formas de pasar props, distintas formas de tipar las props, validaciones avanzadas.
 
+  3_Events: $emit, emision y escucha de eventos entre hijo/padre, 
+  recepcion de argumentos al escuchar eventos, modificador .once, comparacion con eventos nativos del DOM
+
+  4_ComponentVModel: v-model para comunicacion bidireccional entre componentes, binding multiple, validaciones, modificadores.
+
+  5_FallThroughAttributes: paso de atributos y event listeners no declarados a componentes, 
+  paso a nodo raiz, paso a nodo arbitrario, variable $attrs, macro useAttrs()
+
+  6_Slots: slot sin nombre, slots nombrados, multiple slots en un componente, 
+  props de slots y slots scopes, componentes 'renderless', contenido por defecto para los slots no usados.
+
+  7_Provide/Inject: Proveedores y consumidores de dependencias, provide/inject, proveedor a nivel de aplicacion, 
+  funcion readonly, claves mediante Symbol()
+
+  8_AsyncComponents: defineAsyncComponent, funcion import, componentes de carga y error
+
+
+Capitulo 3: Reusabilidad (carpeta reusability):
+
+  1_Composable: creacion y uso de composables para reutilizacion de lógica, composables con estado global, funcion 'toValue', buenas practicas.
+
+  2_CustomDirectives: directivas locales y de ambito de aplicacion, acceso a argumento, modificadores y valores.
+
+  3_Plugins: PENDIENTE!
+
+
+Capitulo 4: Componentes incorporados:
+
+  TransitionComponent: 

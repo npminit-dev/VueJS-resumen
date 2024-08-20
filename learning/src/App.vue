@@ -20,6 +20,11 @@ import Events from './components/components_indepth/Events.vue'
 import ComponentVModel from './components/components_indepth/ComponentVModel.vue'
 import FallThroughAttributes from './components/components_indepth/FallThroughAttributes.vue'
 import Slots from './components/components_indepth/Slots.vue'
+import Provide_Inject from './components/components_indepth/Provide_Inject.vue'
+import AsyncComponents from './components/components_indepth/AsyncComponents.vue'
+import Composable from './components/reusability/Composable.vue'
+import CustomDirectives from './components/reusability/CustomDirectives.vue'
+import TransitionComponent from './components/builtin_components/TransitionComponent.vue'
 
 </script>
 
@@ -27,30 +32,44 @@ import Slots from './components/components_indepth/Slots.vue'
 
   <!-- Conceptos esenciales: -->
 
-  <!-- <TemplateSyntax/> -->
-  <!-- <ReactivityFundamentals/> -->
-  <!-- <ComputedProperties/> -->
-  <!-- <ClassAndStyleBinding/> -->
-  <!-- <ConditionalRender/> -->
-  <!-- <ListRender/> -->
-  <!-- <EventHandlers/> -->
-  <!-- <FormBindings/> -->
-  <!-- <LifeCycleHooks/> -->
-  <!-- <Watchers/> -->
-  <!-- <TemplateRefs/> -->
-  <!-- <ComponentEssentials/> -->
+    <!-- <TemplateSyntax/> -->
+    <!-- <ReactivityFundamentals/> -->
+    <!-- <ComputedProperties/> -->
+    <!-- <ClassAndStyleBinding/> -->
+    <!-- <ConditionalRender/> -->
+    <!-- <ListRender/> -->
+    <!-- <EventHandlers/> -->
+    <!-- <FormBindings/> -->
+    <!-- <LifeCycleHooks/> -->
+    <!-- <Watchers/> -->
+    <!-- <TemplateRefs/> -->
+    <!-- <ComponentEssentials/> -->
 
   <!-- ---------------------------------------------------------------- -->
 
-  <!-- Componentes en profundidad -->
+  <!-- Componentes en profundidad: -->
 
-  <!-- <Registration/> -->
-  <!-- <Props/> -->
-  <!-- <Events/> -->
-  <!-- <ComponentVModel/> -->
-  <!-- <FallThroughAttributes/> -->
-  <Slots/>
+    <!-- <Registration/> -->
+    <!-- <Props/> -->
+    <!-- <Events/> -->
+    <!-- <ComponentVModel/> -->
+    <!-- <FallThroughAttributes/> -->
+    <!-- <Slots/> -->
+    <!-- <Provide_Inject/> -->
+    <!-- <AsyncComponents/> -->
 
+  <!-- ---------------------------------------------------------------- -->
+
+  <!-- Reusabilidad: -->
+
+    <!-- <Composable/> -->
+    <!-- <CustomDirectives/> -->
+
+  <!-- ---------------------------------------------------------------- -->
+
+  <!-- Componentes incorporados -->
+
+  <TransitionComponent/>
 
   <!-- ---------------------------------------------------------------- -->
   <!-- <RouterView /> -->

@@ -23,7 +23,7 @@ Capitulo 1: conceptos basicos (carpeta essentials):
   7_EventHandlers: manejadores de eventos, modificadores, shorthands
 
   8_FormBindings: binding 'estandar', directiva v-model, casos de uso con inputs/checkboxs/textareas/selects, renderizado dinamico, 
-  'value' dinamico, modificadores de v-model, binding de valores 'no string', true-value/false-value.
+  'value' dinamico, modificadores de v-model, binding de valores 'no string', atributos true-value/false-value.
 
   9_LifeCycleHooks: onBeforeMount, onBeforeUpdate, onErrorCaptured, onMounted, onRenderTracked, onRenderTriggered, 
   onUpdated, onActivated, onDeactivated, onServerPrefetch
@@ -65,9 +65,19 @@ Capitulo 3: Reusabilidad (carpeta reusability):
 
   2_CustomDirectives: directivas locales y de ambito de aplicacion, acceso a argumento, modificadores y valores.
 
-  3_Plugins: PENDIENTE!
+  3_Plugins: plugins personalizados, instalacion y uso
 
 
 Capitulo 4: Componentes incorporados:
 
-  TransitionComponent: 
+  1_TransitionComponent: componente Transition, fases de animacion/transicion, animaciones nombradas, 
+  tipos de animacion y duraciones explicitas, animaciones anidadas, JavaScript hooks, clase appear, animaciones dinamicas,
+  transiciones entre multiples elementos o componentes, animaciones reutilizables mediante slots.
+
+  2_TransitionGroupComponent: componente TransitionGroup, clases 'move', propiedad 'tag', uso con JavaScript hooks
+
+  3_KeepAliveComponent: almacenamiento en cache de componentes con KeepAlive, include/exclude, prop 'max', hooks de ciclo de vida para componentes en cache
+
+  4_TeleportComponent: componente Teleport, propiedad 'disabled', propiedad 'to', multiples teleports al mismo objetivo.
+
+  5_SuspenseComponent: componente Suspense, componentes 'suspensibles', slots, eventos, fases de la suspension

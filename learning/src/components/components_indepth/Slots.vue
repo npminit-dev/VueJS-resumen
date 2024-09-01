@@ -171,12 +171,12 @@ const switchPage = () => page.value = page.value === 'aside' ? 'asideleft' : 'as
 
   <br>
 
-  <!-- Quizás te preguntes cuál sería un buen caso de uso para las ranuras con alcance. 
+  <!-- Quizás te preguntes cuál sería un buen caso de uso para los scoped slots. 
   Aquí hay un ejemplo: imagine un componente <FancyList> que representa una lista de elementos; 
   puede encapsular la lógica para cargar datos remotos, usar los datos para mostrar una lista o incluso funciones avanzadas como paginación o desplazamiento infinito. 
   Sin embargo, queremos que sea flexible en cuanto al aspecto de cada elemento y dejar el estilo de cada elemento al componente principal que lo consume. -->
   <FancyList :limit="10">
-    <template v-slot:name="{ title, price, category }">
+    <template v-slot:item="{ title, price, category }">
       <div>
         <h4>{{ title }}</h4>
         <h5>{{ price }}</h5>

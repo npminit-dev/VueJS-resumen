@@ -25,6 +25,11 @@ import AsyncComponents from './components/components_indepth/AsyncComponents.vue
 import Composable from './components/reusability/Composable.vue'
 import CustomDirectives from './components/reusability/CustomDirectives.vue'
 import TransitionComponent from './components/builtin_components/TransitionComponent.vue'
+import Plugins from './components/reusability/Plugins.vue'
+import TransitionGroupComponent from './components/builtin_components/TransitionGroupComponent.vue'
+import KeepAliveComponent from './components/builtin_components/KeepAliveComponent.vue'
+import TeleportComponent from './components/builtin_components/TeleportComponent.vue'
+import SuspenseComponent from './components/builtin_components/SuspenseComponent.vue'
 
 </script>
 
@@ -64,12 +69,17 @@ import TransitionComponent from './components/builtin_components/TransitionCompo
 
     <!-- <Composable/> -->
     <!-- <CustomDirectives/> -->
+    <!-- <Plugins/> -->
 
   <!-- ---------------------------------------------------------------- -->
 
   <!-- Componentes incorporados -->
 
-  <TransitionComponent/>
+  <!-- <TransitionComponent/> -->
+  <!-- <TransitionGroupComponent/> -->
+  <!-- <KeepAliveComponent/> -->
+  <!-- <TeleportComponent/> -->
+  <SuspenseComponent/>
 
   <!-- ---------------------------------------------------------------- -->
   <!-- <RouterView /> -->

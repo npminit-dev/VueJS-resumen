@@ -6,12 +6,18 @@ import GlobalComponent from './components/test_components/GlobalComponent.vue'
 
 import App from './App.vue'
 import router from './router'
+import { i18nPlugin } from './utils'
 
 const app = createApp(App) // se crea la app usando 'App' como componente raiz
 // const app2 = createApp(App) // una segunda instancia de aplicacion usando el mismo componente raiz
 
-app.use(createPinia()) // se hace uso las librerias requeridas para la app
+app.use(createPinia()) // se hace uso las librerias y plugins requeridas para la app
 app.use(router)
+app.use(i18nPlugin, { // instalacion de plugin personalizado
+  greetings: {
+    hello: 'Hola'
+  }
+})
 
 app.component('GlobalComponent', GlobalComponent) // registro de componentes globales (su nombre por el que vamos a llamarlo en la app, y el componente que se renderiza)
 app.component('LazyComponent3', defineAsyncComponent(() => import('./components/test_components/LazyComponent.vue'))) /* componente cargado de forma diferida */
@@ -21,14 +27,6 @@ app.component('LazyComponent3', defineAsyncComponent(() => import('./components/
 // }
 
 app.provide('greetings', 'Hello! i`m main.js') // se proveen valores para ser accesibles a toda la aplicación mediante inject
-
-app.directive('submitBtn', { /* definicion de directivas globales (no require el prefijo 'v') */
-  mounted: (el) => {
-    if(el.tagName === 'BUTTON') {
-      el.type = 'submit'
-    }
-  }
-})
 
 app.mount('#app') // se monta la aplicacion en el nodo con el id #app, similar a como react lo hace con 'root'
 // app2.mount('#app2') // se monta otra instancia diferente de la misma app en otro nodo
